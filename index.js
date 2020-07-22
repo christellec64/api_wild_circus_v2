@@ -3,9 +3,14 @@ const express = require("express");
 const sequelize = require("./sequelize");
 const cors = require("cors");
 const app = express();
+const bodyParser = require("body-parser");
 require("./association");
 const port = process.env.PORT || 8080;
 const api = require("./api");
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.use(express.json());
 app.use(cors());
 
@@ -16,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 sequelize
-  .sync({ alter: true })
+  .sync()
   .then(() => {
     return sequelize.authenticate();
   })

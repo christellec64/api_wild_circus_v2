@@ -1,0 +1,28 @@
+### GET ALL SHOW
+GET http://localhost:8080/api/tickets
+
+### GET ONE SHOW
+GET http://localhost:8080/api/tickets/
+
+### POST ONE SHOW
+POST http://localhost:8080/api/tickets 
+Content-Type: application/json
+
+{
+    "price": 3,
+    "label": "Enfants",
+    "ShowId":"b54db12a-859a-490f-bedd-ab717aecda2d",
+    "ClientId" : "904e7c6b-4f43-4286-81d6-96f9eef08c68"
+}
+
+### PUT ONE SHOW
+PUT http://localhost:8080/api/tickets/b64489bb-f842-4c4f-bc4c-e77f3e003806
+Content-Type: application/json
+
+{
+    "price": 5,
+    "label": "Enfants",
+}
+
+### DELETE ONE SHOW
+DELETE http://localhost:8080/api/tickets/d196006d-5f96-4bd6-91da-5fa2e55cebb5

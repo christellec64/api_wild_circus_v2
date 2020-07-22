@@ -1,0 +1,28 @@
+### GET ALL SHOW
+GET http://localhost:8080/api/shows
+
+### GET ONE SHOW
+GET http://localhost:8080/api/shows/
+
+### POST ONE SHOW
+POST http://localhost:8080/api/shows 
+Content-Type: application/json
+
+{
+    "title": "Spectacle WCS",
+    "show_date": "2020-09-09",
+    "localisation": "Biarritz"
+}
+
+### PUT ONE SHOW
+PUT http://localhost:8080/api/shows/b64489bb-f842-4c4f-bc4c-e77f3e003806
+Content-Type: application/json
+
+{
+    "title": "Spectacle Estia",
+    "show_date": "2020-09-09",
+    "localisation": "Biarritz"
+}
+
+### DELETE ONE SHOW
+DELETE http://localhost:8080/api/shows/d196006d-5f96-4bd6-91da-5fa2e55cebb5

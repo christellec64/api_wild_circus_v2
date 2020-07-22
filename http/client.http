@@ -1,0 +1,34 @@
+### GET ALL SHOW
+GET http://localhost:8080/api/clients
+
+### GET ONE SHOW
+GET http://localhost:8080/api/clients/
+
+### POST ONE SHOW
+POST http://localhost:8080/api/clients 
+Content-Type: application/json
+
+{
+    "lastName": "Jean",
+    "firstName": "Toto",
+    "tel": "0596859483",
+    "email": "jean.toto@dev.com",
+    "birthday": "1980-03-20",
+    "ShowId": "b54db12a-859a-490f-bedd-ab717aecda2d"
+}
+
+### PUT ONE SHOW
+PUT http://localhost:8080/api/clients/b64489bb-f842-4c4f-bc4c-e77f3e003806
+Content-Type: application/json
+
+{
+    "lastName": "Jean",
+    "firstName": "Toto",
+    "tel": "0596859483",
+    "email": "jean.toto@dev.com",
+    "birthday": "1980-03-20",
+    "ShowId": "b64489bb-f842-4c4f-bc4c-e77f3e003806"
+}
+
+### DELETE ONE SHOW
+DELETE http://localhost:8080/api/clients/d196006d-5f96-4bd6-91da-5fa2e55cebb5

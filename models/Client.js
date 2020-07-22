@@ -14,11 +14,11 @@ const Client = sequelizeInstance.define("Client", {
     allowNull: false,
   },
   firstName: {
-    type: Sequelize.DATE(),
+    type: Sequelize.STRING(200),
     allowNull: false,
   },
   tel: {
-    type: Sequelize.STRING(100),
+    type: Sequelize.INTEGER,
     allowNull: false,
   },
   email: {
@@ -26,7 +26,7 @@ const Client = sequelizeInstance.define("Client", {
     allowNull: false,
   },
   birthday: {
-    type: Sequelize.DATE(),
+    type: Sequelize.DATEONLY,
     allowNull: false,
   },
 });

@@ -14,10 +14,10 @@ const Show = sequelizeInstance.define("Show", {
     allowNull: false,
   },
   show_date: {
-    type: Sequelize.DATE(),
+    type: Sequelize.DATEONLY,
     allowNull: false,
   },
-  location: {
+  localisation: {
     type: Sequelize.STRING(100),
     allowNull: false,
   },

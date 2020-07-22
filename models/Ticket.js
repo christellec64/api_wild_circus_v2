@@ -9,12 +9,12 @@ const Ticket = sequelizeInstance.define("Ticket", {
     primaryKey: true,
     defaultValue: Sequelize.UUIDV4,
   },
-  purchase_date: {
-    type: Sequelize.DATE(),
-    allowNull: false,
-  },
   price: {
     type: Sequelize.FLOAT(),
+    allowNull: false,
+  },
+  label: {
+    type: Sequelize.STRING(100),
     allowNull: false,
   },
 });
