@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 sequelize
-  .sync()
+  .sync({ alter: true })
   .then(() => {
     return sequelize.authenticate();
   })

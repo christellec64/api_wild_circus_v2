@@ -1,0 +1,32 @@
+### GET ALL SHOW
+GET http://localhost:8080/api/family
+
+### GET ONE SHOW
+GET http://localhost:8080/api/family/68d5d5e4-0a05-472e-8554-ebcf1a81b4c5
+
+### POST ONE SHOW
+POST http://localhost:8080/api/family 
+Content-Type: application/json
+
+{
+      "name": "Band of Rush",
+      "age": "",
+      "content": "A circus troup of eight artists to surprise and move you! They have the strength of a bear, the elegance of a lion and an unimaginable robustness. These are eight exceptional young talents that shine with their many facets during an hour and a half show to amaze you !",
+      "comment": "In Band of Rush, we are all brothers and sisters. It's really true, we were born in a family of eleven children... "
+}
+
+### PUT ONE SHOW
+PUT http://localhost:8080/api/family/b64489bb-f842-4c4f-bc4c-e77f3e003806
+Content-Type: application/json
+
+{
+    "lastName": "Jean",
+    "firstName": "Toto",
+    "tel": "0596859483",
+    "email": "jean.toto@dev.com",
+    "birthday": "1980-03-20",
+    "ShowId": "b64489bb-f842-4c4f-bc4c-e77f3e003806"
+}
+
+### DELETE ONE SHOW
+DELETE http://localhost:8080/api/family/0900ff92-72ef-471b-af28-3a3bfd1d819d
