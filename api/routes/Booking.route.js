@@ -6,6 +6,7 @@ const { USER_MAIL, PASS_MAIL } = process.env;
 
 router.post("/", async (req, res) => {
   const { lastname, firstname, email, selectCategory, selectShow } = req.body;
+
   try {
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -16,12 +17,11 @@ router.post("/", async (req, res) => {
     });
 
     const mail = await transporter.verify();
-
     const success = await transporter.sendMail({
-      from: `"Wild Circus" <${USER_MAIL}>`,
-      to: `"${lastname} ${firstname}" <${email}>`,
+      from: USER_MAIL,
+      to: email,
       subject: `Your reservation at ${selectShow}`,
-      text: "reservation",
+      text: "hello",
       html: `<h4>Dear ${lastname} ${firstname},</h4>
             <h4>First of all, Thank you for your reservation !</h4>
             <p><em>We remind you that all shows are started at 20:00PM.<em></p>
@@ -33,6 +33,7 @@ router.post("/", async (req, res) => {
             <p>We can't wait to see you soon at Wild Circus</p>
       `,
     });
+    console.log(success);
     res.status(200).json({ success }, mail);
   } catch (err) {
     res.status(400).json(err);
