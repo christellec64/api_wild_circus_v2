@@ -9,8 +9,8 @@ POST http://localhost:8080/api/tickets
 Content-Type: application/json
 
 {
-    "price": 3,
-    "label": "Enfants",
+    "price": 25,
+    "label": "Adult (18-60 Years Old)",
     "ShowId":"b54db12a-859a-490f-bedd-ab717aecda2d",
     "ClientId" : "904e7c6b-4f43-4286-81d6-96f9eef08c68"
 }

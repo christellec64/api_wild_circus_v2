@@ -9,20 +9,20 @@ POST http://localhost:8080/api/shows
 Content-Type: application/json
 
 {
-    "title": "Spectacle WCS",
-    "show_date": "2020-09-09",
-    "localisation": "Biarritz"
+    "title": "FireSchool Show",
+    "show_date": "2021-06-06",
+    "localisation": "Ondres"
 }
 
 ### PUT ONE SHOW
-PUT http://localhost:8080/api/shows/b64489bb-f842-4c4f-bc4c-e77f3e003806
+PUT http://localhost:8080/api/shows/2f76c08e-5e61-4e63-8a13-61b1ee31aa26
 Content-Type: application/json
 
 {
     "title": "Spectacle Estia",
-    "show_date": "2020-09-09",
+    "show_date": "18-11-2021",
     "localisation": "Biarritz"
 }
 
 ### DELETE ONE SHOW
-DELETE http://localhost:8080/api/shows/d196006d-5f96-4bd6-91da-5fa2e55cebb5
+DELETE http://localhost:8080/api/shows/0ab9335b-02ac-4bae-8e2a-c5336a5128c8
