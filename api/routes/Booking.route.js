@@ -30,10 +30,9 @@ router.post("/", async (req, res) => {
             <li>Show : ${selectShow}</li>
             <li>Category : ${selectCategory}</li>
             </ul>
-            <p>We can't wait to see you soon at Wild Circus</p>
+            <p>We can't wait to see you soon at Wild Circus !</p>
       `,
     });
-    console.log(success);
     res.status(200).json({ success }, mail);
   } catch (err) {
     res.status(400).json(err);
