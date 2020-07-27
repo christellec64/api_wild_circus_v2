@@ -9,9 +9,9 @@ POST http://localhost:8080/api/shows
 Content-Type: application/json
 
 {
-    "title": "FireSchool Show",
-    "show_date": "2021-06-06",
-    "localisation": "Ondres"
+    "title": "IfaeroShow",
+    "show_date": "2021-02-04",
+    "localisation": "Anglet"
 }
 
 ### PUT ONE SHOW
