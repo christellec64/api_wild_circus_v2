@@ -33,7 +33,7 @@ router.post("/", async (req, res) => {
             <p>We can't wait to see you soon at Wild Circus !</p>
       `,
     });
-    res.status(200).json({ success }, mail);
+    res.status(201).json({ mail });
   } catch (err) {
     res.status(400).json(err);
     console.log(err);

@@ -27,7 +27,7 @@ router.post("/", async (req, res) => {
             <p>${message}</p>
       `,
     });
-    res.status(200).json({ mail });
+    res.status(201).json({ mail });
   } catch (err) {
     res.status(400).json(err);
   }
