@@ -9,8 +9,8 @@ POST http://localhost:8080/api/tickets
 Content-Type: application/json
 
 {
-    "price": 25,
-    "label": "Adult (18-60 Years Old)",
+    "price": 15,
+    "label": "Adult(12-18 Years Old)",
     "ShowId":"b54db12a-859a-490f-bedd-ab717aecda2d",
     "ClientId" : "904e7c6b-4f43-4286-81d6-96f9eef08c68"
 }
@@ -25,4 +25,4 @@ Content-Type: application/json
 }
 
 ### DELETE ONE SHOW
-DELETE http://localhost:8080/api/tickets/d196006d-5f96-4bd6-91da-5fa2e55cebb5
+DELETE http://localhost:8080/api/tickets/d7e37b3c-8d1b-4c06-95c0-b27fb4631418

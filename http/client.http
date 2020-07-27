@@ -1,11 +1,11 @@
 ### GET ALL SHOW
-GET http://localhost:8080/api/clients
+GET https://wild-circus-api.herokuapp.com/api/clients
 
 ### GET ONE SHOW
 GET http://localhost:8080/api/clients/
 
 ### POST ONE SHOW
-POST http://localhost:8080/api/clients 
+POST https://wild-circus-api.herokuapp.com/api/clients
 Content-Type: application/json
 
 {
